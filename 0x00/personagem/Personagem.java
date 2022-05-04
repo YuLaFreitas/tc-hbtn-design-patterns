@@ -1,4 +1,4 @@
-abstract class Personagem{
+public abstract class Personagem{
        private String nome;
        private TipoPersonagem tipo;
 
@@ -18,8 +18,6 @@ abstract class Personagem{
    public double getDanoAtaque(){
         return this.forca;
     }
-
-
     @Override
    public String toString() {
         return "Personagem { " +
