@@ -1,6 +1,6 @@
 import org.jetbrains.annotations.NotNull;
 
-class TerraMediaPersonagemFactory extends  PersonagemFactory{
+public class TerraMediaPersonagemFactory extends  PersonagemFactory{
 
     @Override
     public Personagem createPersonagem(@NotNull TipoPersonagem tipo , String nome) {
