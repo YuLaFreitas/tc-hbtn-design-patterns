@@ -1,9 +1,8 @@
-import org.jetbrains.annotations.NotNull;
 
-public class TerraMediaPersonagemFactory extends  PersonagemFactory{
+public class TerraMediaPersonagemFactory extends PersonagemFactory{
 
     @Override
-    public Personagem createPersonagem(@NotNull TipoPersonagem tipo , String nome) {
+    public Personagem createPersonagem(TipoPersonagem tipo , String nome) {
         switch (tipo){
             case MAGO : return new Mago(nome, 10, 2, 5, 3, 4);
             case LADRAO : return new Ladrao(nome, 2, 6, 8, 5, 10);
