@@ -4,7 +4,7 @@ import java.util.List;
 
 public class BebidaDecorator extends Bebida {
 
-    public Bebida bebidaDecorada;
+    private Bebida bebidaDecorada;
 
 
     public BebidaDecorator(Bebida bebidaDecorada) {
