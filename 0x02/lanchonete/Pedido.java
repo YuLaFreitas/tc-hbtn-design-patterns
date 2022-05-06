@@ -8,7 +8,12 @@ public class Pedido {
         public Pedido(TipoLanche tipoLanche, TamanhoBatata tamanhoBatata, TipoBrinde tipoBrinde,TipoBebida tipoBebida) {
             if(tipoBebida != null){
                 ItemPedido bebida = new ItemPedido(TipoItemPedido.BEBIDA, tipoBebida.name());
-                adicionarItemDentroCaixa(bebida);
+                adicionarItemForaCaixa(bebida);
+            }
+
+            if(tamanhoBatata != null){
+                ItemPedido batata = new ItemPedido(TipoItemPedido.BATATA, tamanhoBatata.name());
+                adicionarItemDentroCaixa(batata);
             }
 
             if(tipoBrinde != null){
@@ -16,10 +21,6 @@ public class Pedido {
                 adicionarItemDentroCaixa(brinde);
             }
 
-            if(tamanhoBatata != null){
-                ItemPedido batata = new ItemPedido(TipoItemPedido.BATATA, tamanhoBatata.name());
-                adicionarItemDentroCaixa(batata);
-            }
             if(tipoLanche != null){
                 ItemPedido lanche = new ItemPedido(TipoItemPedido.LANCHE, tipoLanche.name());
                 adicionarItemDentroCaixa(lanche);
