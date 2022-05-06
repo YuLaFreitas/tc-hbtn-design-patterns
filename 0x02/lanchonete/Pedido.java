@@ -11,6 +11,7 @@ public class Pedido {
                 adicionarItemForaCaixa(bebida);
             }
 
+
             if(tamanhoBatata != null){
                 ItemPedido batata = new ItemPedido(TipoItemPedido.BATATA, tamanhoBatata.name());
                 adicionarItemDentroCaixa(batata);
