@@ -11,15 +11,14 @@ public class Pedido {
                 adicionarItemForaCaixa(bebida);
             }
 
+            if(tipoBrinde != null){
+                ItemPedido brinde = new ItemPedido(TipoItemPedido.BRINDE, tipoBrinde.name());
+                adicionarItemDentroCaixa(brinde);
+            }
 
             if(tamanhoBatata != null){
                 ItemPedido batata = new ItemPedido(TipoItemPedido.BATATA, tamanhoBatata.name());
                 adicionarItemDentroCaixa(batata);
-            }
-
-            if(tipoBrinde != null){
-                ItemPedido brinde = new ItemPedido(TipoItemPedido.BRINDE, tipoBrinde.name());
-                adicionarItemDentroCaixa(brinde);
             }
 
             if(tipoLanche != null){
