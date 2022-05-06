@@ -59,7 +59,7 @@ public class Impressao {
                         "total de paginas: %d," +
                         " total coloridas: %d, " +
                         "total preto e branco: %d, " +
-                                "%se " +
+                                "%s" +
                                         "total: R$ %.2f",
                 this.paginasTotais,
                 this.paginasColoridas,
