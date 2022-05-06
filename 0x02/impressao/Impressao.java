@@ -53,7 +53,7 @@ public class Impressao {
     @Override
     public String toString() {
         String frase = ehFrenteVerso?
-                "frente e verso, ": "frente apenas ";
+                "frente e verso. ": "frente apenas. ";
 
         return String.format(
                         "total de paginas: %d," +
